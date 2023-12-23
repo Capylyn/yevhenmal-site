@@ -1,95 +1,105 @@
-body {
-    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
-    font-family: sans-serif;
-    padding: 20px;
-  }
-  
-  h1 {
-    font-size: 40px;
-    margin-top: 0;
-    margin-bottom: 15px;
-  }
-  
-  h2 {
-    font-size: 30px;
-  }
-  
-  .established {
-    font-style: italic;
-  }
-  
-  h1, h2, p {
-    text-align: center;
-  }
-  
-  .menu {
-    width: 80%;
-    background-color: burlywood;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    max-width: 500px;
-  }
-  img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -25px;
-    margin-bottom: -25px;
-  }
-  hr {
-    height: 2px;
-    background-color: brown;
-    border-color: brown;
-  }
-  
-  .bottom-line {
-    margin-top: 25px;
-  }
-  
-  h1, h2 {
-    font-family: Impact, serif;
-  }
-  
-  .item p {
-    display: inline-block;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-size: 18px;
-  }
-  
-  .flavor, .dessert {
-    text-align: left;
-    width: 75%;
-  }
-  
-  .price {
-    text-align: right;
-    width: 25%;
-  }
-  
-  /* FOOTER */
-  
-  footer {
-    font-size: 14px;
-  }
-  
-  .address {
-    margin-bottom: 5px;
-  }
-  
-  a {
-    color: black;
-  }
-  
-  a:visited {
-    color: black;
-  }
-  
-  a:hover {
-    color: brown;
-  }
-  
-  a:active {
-    color: brown;
-  }
+.header__hero {
+  display: flex;
+  background-image: url(../img/header-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px;
+}
+
+.header__container {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: right;
+}
+
+.header_buttons-container {
+  display: flex;
+  margin-top: 40px;
+}
+
+.header__video-link {
+  display: flex;
+  color: var(--footer-title-color);
+  text-decoration: initial;
+  font-weight: 700;
+  align-items: center;
+  margin: 10px;
+  fill: var(--footer-title-color);
+}
+
+.header__video-link:hover {
+  text-decoration: underline;
+  color: var(--light-button-color)
+}
+
+.header__button-button {
+  display: inline-block;
+  width: 150px;
+  height: 45px;
+  line-height: 45px;
+  vertical-align: baseline;
+  text-align: center;
+  font-family: var(--button-font);
+  font-size: var(--button-font-size);
+  letter-spacing: var(--button-font-spacing);
+  font-weight: 700;
+  background-color: var(--light-button-color);
+  color: var(--button-font-color);
+  border-radius: 25px;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.header__button-button:hover {
+  background-color: white;
+  color: var(--dark-button-color);
+}
+
+.header_button-text {
+  display: flex;
+  width: 200px;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__text {
+  max-width: 700px;
+}
+
+.header__tagline {
+  color: var(--footer-line-color);
+}
+
+.header__title {
+  color: var(--footer-title-color);
+  font-size: 90px;
+  margin-top: 30px;
+}
+
+.header_watch-container:hover {
+  filter: invert(55%) sepia(93%) saturate(1614%) hue-rotate(172deg) brightness(102%) contrast(104%);
+}
+
+.header__video-icon {
+  filter: invert(100%) sepia(100%) saturate(32%) hue-rotate(51deg) brightness(106%) contrast(103%);
+  width: 25px;
+  margin: 10px;
+}
+
+.header__tagline {
+  color: var(--footer-line-color);
+}
+
+.header__title {
+  color: var(--footer-title-color);
+}
+
+.header__description {
+  color: var(--footer-title-color);
+  margin-bottom: 30px;
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: 700;
+}
